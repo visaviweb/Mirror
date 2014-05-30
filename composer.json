@@ -1,0 +1,22 @@
+{
+    "name": "visaviweb/mirror",
+    "description": "Mirror a source directory to a destination directory updating only modified files.",
+    "require": {
+        "symfony/console": "2.6.*",
+        "symfony/finder": "2.6.*",
+        "symfony/filesystem": "2.6.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Visavi",
+            "email": "olivier@visaviweb.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "Visavi\\Mirror": "src/"
+        }
+    }
+}
