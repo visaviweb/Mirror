@@ -3,9 +3,10 @@
 
 set_time_limit(0);
 
-if ((!$classloader = @include_once __DIR__ . '/../vendor/autoload.php'))
-{
-    die("Run the following command at the application root folder:\n\n composer update\n\n");
+if ((!$classloader = @include_once __DIR__ . '/../../../autoload.php')) {
+    if (!$classloader = @include_once __DIR__ . '/../vendor/autoload.php') {
+	    die("Run the following command at the application root folder:\n\n composer update\n\n");
+    }
 }
 
 use Symfony\Component\Console\Application;
